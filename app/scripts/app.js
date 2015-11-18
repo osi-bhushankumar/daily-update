@@ -2,32 +2,37 @@
 
 /**
  * @ngdoc overview
- * @name testwebApp
+ * @name webadminApp
  * @description
- * # testwebApp
+ * # webadminApp
  *
  * Main module of the application.
  */
+const routeApp = 'routeApp';
 angular
-  .module('testwebApp', [
+  .module(routeApp, [
     'ngAnimate',
     'ngCookies',
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'datatables'
   ])
   .config(function ($routeProvider) {
+
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl',
-        controllerAs: 'main'
+        templateUrl: 'views/home/home.html'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'about'
+      .when('/login', {
+        templateUrl: 'views/login/login.html'
+      })
+      .when('/category', {
+        templateUrl: 'views/category/category.html'
+      })
+      .when('/addcategory', {
+        templateUrl: 'views/addCategory/addcategory.html'
       })
       .otherwise({
         redirectTo: '/'

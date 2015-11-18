@@ -1,5 +1,5 @@
 {
-  "name": "testweb",
+  "name": "webadmin",
   "private": true,
   "devDependencies": {
     "autoprefixer-core": "^5.2.1",
@@ -36,12 +36,11 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "grunt test"
+    "postinstall": "bower install"
   },
   "dependencies": {
     "express": "^4.13.3",
     "gzippo": "^0.2.0",
-    "imagemin": "^3.2.0",
     "morgan": "^1.6.1"
   }
 }

@@ -2,10 +2,6 @@
 'use strict';
 
 // # Globbing
-// for performance reasons we're only matching one level down:
-// 'test/spec/{,*/}*.js'
-// use this if you want to recursively match all subfolders:
-// 'test/spec/**/*.js'
 
 module.exports = function (grunt) {
 
@@ -43,11 +39,11 @@ module.exports = function (grunt) {
         options: {
           livereload: '<%= connect.options.livereload %>'
         }
-      },
+      },/*
       jsTest: {
-        files: ['test/spec/{,*/}*.js'],
+        files: ['test/spec/{,*!/}*.js'],
         tasks: ['newer:jshint:test', 'newer:jscs:test', 'karma']
-      },
+      },*/
       styles: {
         files: ['<%= yeoman.app %>/styles/{,*/}*.css'],
         tasks: ['newer:copy:styles', 'postcss']
@@ -93,7 +89,7 @@ module.exports = function (grunt) {
             ];
           }
         }
-      },
+      },/*
       test: {
         options: {
           port: 9001,
@@ -109,7 +105,7 @@ module.exports = function (grunt) {
             ];
           }
         }
-      },
+      },*/
       dist: {
         options: {
           open: true,
@@ -129,13 +125,13 @@ module.exports = function (grunt) {
           'Gruntfile.js',
           '<%= yeoman.app %>/scripts/{,*/}*.js'
         ]
-      },
+      }/*
       test: {
         options: {
           jshintrc: 'test/.jshintrc'
         },
-        src: ['test/spec/{,*/}*.js']
-      }
+        src: ['test/spec/{,*!/}*.js']
+      }*/
     },
 
     // Make sure code styles are up to par
@@ -149,10 +145,10 @@ module.exports = function (grunt) {
           'Gruntfile.js',
           '<%= yeoman.app %>/scripts/{,*/}*.js'
         ]
-      },
+      }/*
       test: {
-        src: ['test/spec/{,*/}*.js']
-      }
+        src: ['test/spec/{,*!/}*.js']
+      }*/
     },
 
     // Empties folders to start fresh
@@ -203,7 +199,7 @@ module.exports = function (grunt) {
       app: {
         src: ['<%= yeoman.app %>/index.html'],
         ignorePath:  /\.\.\//
-      },
+      }/*,
       test: {
         devDependencies: true,
         src: '<%= karma.unit.configFile %>',
@@ -219,7 +215,7 @@ module.exports = function (grunt) {
               }
             }
           }
-      }
+      }*/
     },
 
     // Renames files for browser caching purposes
@@ -338,7 +334,7 @@ module.exports = function (grunt) {
     ngtemplates: {
       dist: {
         options: {
-          module: 'testwebApp',
+          module: 'routeApp',
           htmlmin: '<%= htmlmin.dist.options %>',
           usemin: 'scripts/scripts.js'
         },
@@ -406,24 +402,24 @@ module.exports = function (grunt) {
     concurrent: {
       server: [
         'copy:styles'
-      ],
+      ],/*
       test: [
         'copy:styles'
-      ],
+      ],*/
       dist: [
         'copy:styles',
         'imagemin',
         'svgmin'
       ]
-    },
+    }
 
     // Test settings
-    karma: {
+   /* karma: {
       unit: {
         configFile: 'test/karma.conf.js',
         singleRun: true
       }
-    }
+    }*/
   });
 
 
@@ -447,14 +443,14 @@ module.exports = function (grunt) {
     grunt.task.run(['serve:' + target]);
   });
 
-  grunt.registerTask('test', [
+ /* grunt.registerTask('test', [
     'clean:server',
     'wiredep',
     'concurrent:test',
     'postcss',
     'connect:test',
     'karma'
-  ]);
+  ]);*/
 
   grunt.registerTask('build', [
     'clean:dist',
@@ -477,7 +473,6 @@ module.exports = function (grunt) {
   grunt.registerTask('default', [
     'newer:jshint',
     'newer:jscs',
-    'test',
     'build'
   ]);
 };
