@@ -40,9 +40,10 @@ System.register(['angular2/core', 'angular2/bootstrap', 'angular2/router'], func
                         selector: 'my-cmp',
                         template: "\n    <div>hello {{name}}!</div>\n    <div>message: <input id=\"message\"></div>\n  "
                     }), 
-                    __metadata('design:paramtypes', [router_1.RouteParams])
+                    __metadata('design:paramtypes', [(typeof (_a = typeof router_1.RouteParams !== 'undefined' && router_1.RouteParams) === 'function' && _a) || Object])
                 ], MyCmp);
                 return MyCmp;
+                var _a;
             })();
             // #enddocregion
             AppCmp = (function () {

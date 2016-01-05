@@ -314,9 +314,10 @@ System.register(['angular2/src/core/di', 'angular2/src/facade/lang', 'angular2/s
                 AppViewManager_ = __decorate([
                     di_1.Injectable(),
                     __param(4, di_1.Inject(di_1.forwardRef(function () { return proto_view_factory_1.ProtoViewFactory; }))), 
-                    __metadata('design:paramtypes', [view_pool_1.AppViewPool, view_listener_1.AppViewListener, view_manager_utils_1.AppViewManagerUtils, api_1.Renderer, Object])
+                    __metadata('design:paramtypes', [view_pool_1.AppViewPool, view_listener_1.AppViewListener, view_manager_utils_1.AppViewManagerUtils, (typeof (_a = typeof api_1.Renderer !== 'undefined' && api_1.Renderer) === 'function' && _a) || Object, Object])
                 ], AppViewManager_);
                 return AppViewManager_;
+                var _a;
             })(AppViewManager);
             exports_1("AppViewManager_", AppViewManager_);
         }

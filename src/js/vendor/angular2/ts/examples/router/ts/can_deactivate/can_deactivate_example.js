@@ -39,9 +39,10 @@ System.register(['angular2/core', 'angular2/bootstrap', 'angular2/router'], func
                         selector: 'note-cmp',
                         template: "\n    <div>\n      <h2>id: {{id}}</h2>\n      <textarea cols=\"40\" rows=\"10\"></textarea>\n    </div>"
                     }), 
-                    __metadata('design:paramtypes', [router_1.RouteParams])
+                    __metadata('design:paramtypes', [(typeof (_a = typeof router_1.RouteParams !== 'undefined' && router_1.RouteParams) === 'function' && _a) || Object])
                 ], NoteCmp);
                 return NoteCmp;
+                var _a;
             })();
             // #enddocregion
             NoteIndexCmp = (function () {

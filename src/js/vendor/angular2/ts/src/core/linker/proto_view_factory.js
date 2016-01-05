@@ -249,9 +249,10 @@ System.register(['angular2/src/facade/lang', 'angular2/src/core/render/api', 'an
                     __param(1, di_1.Optional()),
                     __param(1, di_1.Inject(platform_directives_and_pipes_1.PLATFORM_PIPES)),
                     __param(5, di_1.Inject(application_tokens_1.APP_ID)), 
-                    __metadata('design:paramtypes', [api_2.Renderer, Array, directive_resolver_1.DirectiveResolver, view_resolver_1.ViewResolver, pipe_resolver_1.PipeResolver, String])
+                    __metadata('design:paramtypes', [(typeof (_a = typeof api_2.Renderer !== 'undefined' && api_2.Renderer) === 'function' && _a) || Object, Array, directive_resolver_1.DirectiveResolver, view_resolver_1.ViewResolver, pipe_resolver_1.PipeResolver, String])
                 ], ProtoViewFactory);
                 return ProtoViewFactory;
+                var _a;
             })();
             exports_1("ProtoViewFactory", ProtoViewFactory);
             _ProtoViewInitializer = (function () {

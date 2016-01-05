@@ -6,23 +6,23 @@ import {DashboardComponent} from './dashboard.component';
 import {HeroService} from './hero.service';
 
 @Component({
-  selector: 'my-app',
-  template: `
+    selector: 'my-app',
+    template: `
     <h1>{{title}}</h1>
     <a [routerLink]="['Dashboard']">Dashboard</a>
     <a [routerLink]="['Heroes']">Heroes</a>
     <router-outlet></router-outlet>
   `,
-  styleUrls: ['app/app.component.css'],
-  directives: [ROUTER_DIRECTIVES],
-  providers: [HeroService]
+    styleUrls: ['app/app.component.css'],
+    directives: [ROUTER_DIRECTIVES],
+    providers: [HeroService]
 })
 @RouteConfig([
-  // {path: '/', redirectTo: ['Dashboard'] },
-  {path: '/dashboard', name: 'Dashboard', component: DashboardComponent, useAsDefault: true},
-  {path: '/heroes', name: 'Heroes', component: HeroesComponent},
-  {path: '/detail/:id', name: 'HeroDetail', component: HeroDetailComponent}
+    {path: '/', redirectTo: ['Dashboard']},
+    {path: 'dashboard', name: 'Dashboard', component: DashboardComponent, useAsDefault: true},
+    {path: 'heroes', name: 'Heroes', component: HeroesComponent},
+    {path: 'detail/:id', name: 'HeroDetail', component: HeroDetailComponent}
 ])
 export class AppComponent {
-  public title = 'Tour of Heroes';
+    public title = 'Tour of Heroes';
 }

@@ -486,9 +486,10 @@ System.register(['angular2/src/facade/async', 'angular2/src/facade/collection', 
                 RootRouter = __decorate([
                     core_1.Injectable(),
                     __param(2, core_1.Inject(route_registry_1.ROUTER_PRIMARY_COMPONENT)), 
-                    __metadata('design:paramtypes', [route_registry_1.RouteRegistry, location_1.Location, lang_1.Type])
+                    __metadata('design:paramtypes', [route_registry_1.RouteRegistry, location_1.Location, (typeof (_a = typeof lang_1.Type !== 'undefined' && lang_1.Type) === 'function' && _a) || Object])
                 ], RootRouter);
                 return RootRouter;
+                var _a;
             })(Router);
             exports_1("RootRouter", RootRouter);
             ChildRouter = (function (_super) {

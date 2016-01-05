@@ -97,9 +97,10 @@ System.register(['./source_module', 'angular2/src/core/change_detection/change_d
                 };
                 ChangeDetectionCompiler = __decorate([
                     di_1.Injectable(), 
-                    __metadata('design:paramtypes', [change_detection_1.ChangeDetectorGenConfig])
+                    __metadata('design:paramtypes', [(typeof (_a = typeof change_detection_1.ChangeDetectorGenConfig !== 'undefined' && change_detection_1.ChangeDetectorGenConfig) === 'function' && _a) || Object])
                 ], ChangeDetectionCompiler);
                 return ChangeDetectionCompiler;
+                var _a;
             })();
             exports_1("ChangeDetectionCompiler", ChangeDetectionCompiler);
         }

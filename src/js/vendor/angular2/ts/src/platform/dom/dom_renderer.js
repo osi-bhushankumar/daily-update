@@ -351,9 +351,10 @@ System.register(['angular2/src/core/di', 'angular2/src/animate/animation_builder
                 DomRenderer_ = __decorate([
                     di_1.Injectable(),
                     __param(3, di_1.Inject(dom_tokens_1.DOCUMENT)), 
-                    __metadata('design:paramtypes', [event_manager_1.EventManager, shared_styles_host_1.DomSharedStylesHost, animation_builder_1.AnimationBuilder, Object])
+                    __metadata('design:paramtypes', [event_manager_1.EventManager, shared_styles_host_1.DomSharedStylesHost, (typeof (_a = typeof animation_builder_1.AnimationBuilder !== 'undefined' && animation_builder_1.AnimationBuilder) === 'function' && _a) || Object, Object])
                 ], DomRenderer_);
                 return DomRenderer_;
+                var _a;
             })(DomRenderer);
             exports_1("DomRenderer_", DomRenderer_);
             NS_PREFIX_RE = /^@([^:]+):(.+)/g;

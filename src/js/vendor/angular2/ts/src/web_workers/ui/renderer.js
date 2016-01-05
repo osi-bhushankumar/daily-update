@@ -99,9 +99,10 @@ System.register(['angular2/src/core/di', 'angular2/src/web_workers/shared/messag
                 };
                 MessageBasedRenderer = __decorate([
                     di_1.Injectable(), 
-                    __metadata('design:paramtypes', [service_message_broker_1.ServiceMessageBrokerFactory, message_bus_1.MessageBus, serializer_1.Serializer, render_proto_view_ref_store_1.RenderProtoViewRefStore, render_view_with_fragments_store_1.RenderViewWithFragmentsStore, api_1.Renderer])
+                    __metadata('design:paramtypes', [(typeof (_a = typeof service_message_broker_1.ServiceMessageBrokerFactory !== 'undefined' && service_message_broker_1.ServiceMessageBrokerFactory) === 'function' && _a) || Object, (typeof (_b = typeof message_bus_1.MessageBus !== 'undefined' && message_bus_1.MessageBus) === 'function' && _b) || Object, (typeof (_c = typeof serializer_1.Serializer !== 'undefined' && serializer_1.Serializer) === 'function' && _c) || Object, (typeof (_d = typeof render_proto_view_ref_store_1.RenderProtoViewRefStore !== 'undefined' && render_proto_view_ref_store_1.RenderProtoViewRefStore) === 'function' && _d) || Object, (typeof (_e = typeof render_view_with_fragments_store_1.RenderViewWithFragmentsStore !== 'undefined' && render_view_with_fragments_store_1.RenderViewWithFragmentsStore) === 'function' && _e) || Object, (typeof (_f = typeof api_1.Renderer !== 'undefined' && api_1.Renderer) === 'function' && _f) || Object])
                 ], MessageBasedRenderer);
                 return MessageBasedRenderer;
+                var _a, _b, _c, _d, _e, _f;
             })();
             exports_1("MessageBasedRenderer", MessageBasedRenderer);
         }

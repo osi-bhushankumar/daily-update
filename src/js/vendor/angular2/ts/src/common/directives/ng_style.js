@@ -105,9 +105,10 @@ System.register(['angular2/core', 'angular2/src/facade/lang'], function(exports_
                 };
                 NgStyle = __decorate([
                     core_1.Directive({ selector: '[ngStyle]', inputs: ['rawStyle: ngStyle'] }), 
-                    __metadata('design:paramtypes', [core_1.KeyValueDiffers, core_1.ElementRef, core_1.Renderer])
+                    __metadata('design:paramtypes', [(typeof (_a = typeof core_1.KeyValueDiffers !== 'undefined' && core_1.KeyValueDiffers) === 'function' && _a) || Object, (typeof (_b = typeof core_1.ElementRef !== 'undefined' && core_1.ElementRef) === 'function' && _b) || Object, (typeof (_c = typeof core_1.Renderer !== 'undefined' && core_1.Renderer) === 'function' && _c) || Object])
                 ], NgStyle);
                 return NgStyle;
+                var _a, _b, _c;
             })();
             exports_1("NgStyle", NgStyle);
         }

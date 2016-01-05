@@ -25,9 +25,6 @@ System.register(['angular2/src/facade/collection', 'angular2/src/core/change_det
             },
             function (interfaces_1_1) {
                 interfaces_1 = interfaces_1_1;
-                exports_1({
-                    "DebugContext": interfaces_1_1["DebugContext"]
-                });
             },
             function (lang_1_1) {
                 lang_1 = lang_1_1;

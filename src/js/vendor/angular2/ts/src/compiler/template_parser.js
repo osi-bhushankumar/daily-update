@@ -146,9 +146,10 @@ System.register(['angular2/src/facade/collection', 'angular2/src/facade/lang', '
                     core_1.Injectable(),
                     __param(3, core_1.Optional()),
                     __param(3, core_1.Inject(TEMPLATE_TRANSFORMS)), 
-                    __metadata('design:paramtypes', [change_detection_1.Parser, element_schema_registry_1.ElementSchemaRegistry, html_parser_1.HtmlParser, Array])
+                    __metadata('design:paramtypes', [(typeof (_a = typeof change_detection_1.Parser !== 'undefined' && change_detection_1.Parser) === 'function' && _a) || Object, (typeof (_b = typeof element_schema_registry_1.ElementSchemaRegistry !== 'undefined' && element_schema_registry_1.ElementSchemaRegistry) === 'function' && _b) || Object, html_parser_1.HtmlParser, Array])
                 ], TemplateParser);
                 return TemplateParser;
+                var _a, _b;
             })();
             exports_1("TemplateParser", TemplateParser);
             TemplateParseVisitor = (function () {

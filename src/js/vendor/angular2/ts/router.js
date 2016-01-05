@@ -36,8 +36,7 @@ System.register(['./src/router/router', './src/router/router_outlet', './src/rou
         'Location': true,
         'CanActivate': true,
         'Instruction': true,
-        'ComponentInstruction': true,
-        'OpaqueToken': true
+        'ComponentInstruction': true
     };
     function exportStar_1(m) {
         var exports = {};
@@ -124,11 +123,8 @@ System.register(['./src/router/router', './src/router/router_outlet', './src/rou
                     "CanActivate": lifecycle_annotations_1_1["CanActivate"]
                 });
             },
-            function (core_2_1) {
-                exports_1({
-                    "OpaqueToken": core_2_1["OpaqueToken"]
-                });
-                core_1 = core_2_1;
+            function (core_1_1) {
+                core_1 = core_1_1;
             },
             function (lang_1_1) {
                 lang_1 = lang_1_1;

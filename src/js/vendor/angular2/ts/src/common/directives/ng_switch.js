@@ -210,9 +210,10 @@ System.register(['angular2/core', 'angular2/src/facade/lang', 'angular2/src/faca
                 NgSwitchWhen = __decorate([
                     core_1.Directive({ selector: '[ngSwitchWhen]', inputs: ['ngSwitchWhen'] }),
                     __param(2, core_1.Host()), 
-                    __metadata('design:paramtypes', [core_1.ViewContainerRef, core_1.TemplateRef, NgSwitch])
+                    __metadata('design:paramtypes', [(typeof (_a = typeof core_1.ViewContainerRef !== 'undefined' && core_1.ViewContainerRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.TemplateRef !== 'undefined' && core_1.TemplateRef) === 'function' && _b) || Object, NgSwitch])
                 ], NgSwitchWhen);
                 return NgSwitchWhen;
+                var _a, _b;
             })();
             exports_1("NgSwitchWhen", NgSwitchWhen);
             /**
@@ -228,9 +229,10 @@ System.register(['angular2/core', 'angular2/src/facade/lang', 'angular2/src/faca
                 NgSwitchDefault = __decorate([
                     core_1.Directive({ selector: '[ngSwitchDefault]' }),
                     __param(2, core_1.Host()), 
-                    __metadata('design:paramtypes', [core_1.ViewContainerRef, core_1.TemplateRef, NgSwitch])
+                    __metadata('design:paramtypes', [(typeof (_a = typeof core_1.ViewContainerRef !== 'undefined' && core_1.ViewContainerRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.TemplateRef !== 'undefined' && core_1.TemplateRef) === 'function' && _b) || Object, NgSwitch])
                 ], NgSwitchDefault);
                 return NgSwitchDefault;
+                var _a, _b;
             })();
             exports_1("NgSwitchDefault", NgSwitchDefault);
         }

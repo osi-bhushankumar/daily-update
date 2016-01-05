@@ -176,9 +176,10 @@ System.register(['angular2/src/facade/async', 'angular2/src/facade/collection', 
                 RouterOutlet = __decorate([
                     core_1.Directive({ selector: 'router-outlet' }),
                     __param(3, core_1.Attribute('name')), 
-                    __metadata('design:paramtypes', [core_1.ElementRef, core_1.DynamicComponentLoader, routerMod.Router, String])
+                    __metadata('design:paramtypes', [(typeof (_a = typeof core_1.ElementRef !== 'undefined' && core_1.ElementRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.DynamicComponentLoader !== 'undefined' && core_1.DynamicComponentLoader) === 'function' && _b) || Object, routerMod.Router, String])
                 ], RouterOutlet);
                 return RouterOutlet;
+                var _a, _b;
             })();
             exports_1("RouterOutlet", RouterOutlet);
         }

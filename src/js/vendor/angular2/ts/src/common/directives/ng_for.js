@@ -161,9 +161,10 @@ System.register(['angular2/core', 'angular2/src/facade/lang'], function(exports_
                 };
                 NgFor = __decorate([
                     core_1.Directive({ selector: '[ngFor][ngForOf]', inputs: ['ngForOf', 'ngForTemplate'] }), 
-                    __metadata('design:paramtypes', [core_1.ViewContainerRef, core_1.TemplateRef, core_1.IterableDiffers, core_1.ChangeDetectorRef])
+                    __metadata('design:paramtypes', [(typeof (_a = typeof core_1.ViewContainerRef !== 'undefined' && core_1.ViewContainerRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.TemplateRef !== 'undefined' && core_1.TemplateRef) === 'function' && _b) || Object, (typeof (_c = typeof core_1.IterableDiffers !== 'undefined' && core_1.IterableDiffers) === 'function' && _c) || Object, (typeof (_d = typeof core_1.ChangeDetectorRef !== 'undefined' && core_1.ChangeDetectorRef) === 'function' && _d) || Object])
                 ], NgFor);
                 return NgFor;
+                var _a, _b, _c, _d;
             })();
             exports_1("NgFor", NgFor);
             RecordViewTuple = (function () {

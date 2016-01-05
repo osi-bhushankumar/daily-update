@@ -104,9 +104,10 @@ System.register(['./directive_metadata', 'angular2/src/facade/lang', 'angular2/s
                 };
                 TemplateNormalizer = __decorate([
                     di_1.Injectable(), 
-                    __metadata('design:paramtypes', [xhr_1.XHR, url_resolver_1.UrlResolver, html_parser_1.HtmlParser])
+                    __metadata('design:paramtypes', [(typeof (_a = typeof xhr_1.XHR !== 'undefined' && xhr_1.XHR) === 'function' && _a) || Object, (typeof (_b = typeof url_resolver_1.UrlResolver !== 'undefined' && url_resolver_1.UrlResolver) === 'function' && _b) || Object, html_parser_1.HtmlParser])
                 ], TemplateNormalizer);
                 return TemplateNormalizer;
+                var _a, _b;
             })();
             exports_1("TemplateNormalizer", TemplateNormalizer);
             TemplatePreparseVisitor = (function () {

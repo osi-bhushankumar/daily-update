@@ -1,6 +1,5 @@
-System.register(['./src/core/metadata', './src/core/util', './src/core/prod_mode', './src/core/di', './src/facade/facade', 'angular2/src/facade/lang', './src/core/application_ref', './src/core/application_tokens', './src/core/zone', './src/core/render', './src/core/linker', './src/core/debug/debug_element', './src/core/testability/testability', './src/core/change_detection', './src/core/platform_directives_and_pipes', './src/core/platform_common_providers', './src/core/application_common_providers', './src/core/reflection/reflection'], function(exports_1) {
+System.register(['./src/core/metadata', './src/core/util', './src/core/prod_mode', './src/core/di', './src/facade/facade', './src/core/application_ref', './src/core/application_tokens', './src/core/zone', './src/core/render', './src/core/linker', './src/core/debug/debug_element', './src/core/testability/testability', './src/core/change_detection', './src/core/platform_directives_and_pipes', './src/core/platform_common_providers', './src/core/application_common_providers', './src/core/reflection/reflection'], function(exports_1) {
     var exportedNames_1 = {
-        'enableProdMode': true,
         'platform': true,
         'createNgZone': true,
         'PlatformRef': true,
@@ -38,11 +37,6 @@ System.register(['./src/core/metadata', './src/core/util', './src/core/prod_mode
             },
             function (facade_1_1) {
                 exportStar_1(facade_1_1);
-            },
-            function (lang_1_1) {
-                exports_1({
-                    "enableProdMode": lang_1_1["enableProdMode"]
-                });
             },
             function (application_ref_1_1) {
                 exports_1({

@@ -62,9 +62,10 @@ System.register(['angular2/src/facade/lang', 'angular2/src/facade/exceptions', '
                 EventManager = __decorate([
                     di_1.Injectable(),
                     __param(0, di_1.Inject(EVENT_MANAGER_PLUGINS)), 
-                    __metadata('design:paramtypes', [Array, ng_zone_1.NgZone])
+                    __metadata('design:paramtypes', [Array, (typeof (_a = typeof ng_zone_1.NgZone !== 'undefined' && ng_zone_1.NgZone) === 'function' && _a) || Object])
                 ], EventManager);
                 return EventManager;
+                var _a;
             })();
             exports_1("EventManager", EventManager);
             EventManagerPlugin = (function () {

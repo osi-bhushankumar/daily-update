@@ -1,8 +1,5 @@
-System.register(['angular2/src/platform/worker_app_common', 'angular2/src/platform/worker_app', '../src/web_workers/shared/client_message_broker', '../src/web_workers/shared/service_message_broker', '../src/web_workers/shared/serializer', '../src/web_workers/shared/message_bus', 'angular2/src/core/angular_entrypoint'], function(exports_1) {
+System.register(['../src/web_workers/shared/client_message_broker', '../src/web_workers/shared/service_message_broker', '../src/web_workers/shared/serializer', '../src/web_workers/shared/message_bus'], function(exports_1) {
     var exportedNames_1 = {
-        'WORKER_APP_PLATFORM': true,
-        'WORKER_APP_APPLICATION_COMMON': true,
-        'WORKER_APP_APPLICATION': true,
         'ClientMessageBroker': true,
         'ClientMessageBrokerFactory': true,
         'FnArg': true,
@@ -10,8 +7,7 @@ System.register(['angular2/src/platform/worker_app_common', 'angular2/src/platfo
         'ReceivedMessage': true,
         'ServiceMessageBroker': true,
         'ServiceMessageBrokerFactory': true,
-        'PRIMITIVE': true,
-        'AngularEntrypoint': true
+        'PRIMITIVE': true
     };
     function exportStar_1(m) {
         var exports = {};
@@ -22,17 +18,6 @@ System.register(['angular2/src/platform/worker_app_common', 'angular2/src/platfo
     }
     return {
         setters:[
-            function (worker_app_common_1_1) {
-                exports_1({
-                    "WORKER_APP_PLATFORM": worker_app_common_1_1["WORKER_APP_PLATFORM"],
-                    "WORKER_APP_APPLICATION_COMMON": worker_app_common_1_1["WORKER_APP_APPLICATION_COMMON"]
-                });
-            },
-            function (worker_app_1_1) {
-                exports_1({
-                    "WORKER_APP_APPLICATION": worker_app_1_1["WORKER_APP_APPLICATION"]
-                });
-            },
             function (client_message_broker_1_1) {
                 exports_1({
                     "ClientMessageBroker": client_message_broker_1_1["ClientMessageBroker"],
@@ -55,11 +40,6 @@ System.register(['angular2/src/platform/worker_app_common', 'angular2/src/platfo
             },
             function (message_bus_1_1) {
                 exportStar_1(message_bus_1_1);
-            },
-            function (angular_entrypoint_1_1) {
-                exports_1({
-                    "AngularEntrypoint": angular_entrypoint_1_1["AngularEntrypoint"]
-                });
             }],
         execute: function() {
         }

@@ -47,9 +47,10 @@ System.register(['angular2/src/core/di', 'angular2/src/compiler/xhr', 'angular2/
                 };
                 WebWorkerXHRImpl = __decorate([
                     di_1.Injectable(), 
-                    __metadata('design:paramtypes', [client_message_broker_1.ClientMessageBrokerFactory])
+                    __metadata('design:paramtypes', [(typeof (_a = typeof client_message_broker_1.ClientMessageBrokerFactory !== 'undefined' && client_message_broker_1.ClientMessageBrokerFactory) === 'function' && _a) || Object])
                 ], WebWorkerXHRImpl);
                 return WebWorkerXHRImpl;
+                var _a;
             })(xhr_1.XHR);
             exports_1("WebWorkerXHRImpl", WebWorkerXHRImpl);
         }

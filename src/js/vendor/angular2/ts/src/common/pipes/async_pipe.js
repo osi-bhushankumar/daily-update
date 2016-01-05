@@ -140,9 +140,10 @@ System.register(['angular2/src/facade/lang', 'angular2/src/facade/async', 'angul
                 AsyncPipe = __decorate([
                     core_1.Pipe({ name: 'async', pure: false }),
                     core_1.Injectable(), 
-                    __metadata('design:paramtypes', [core_1.ChangeDetectorRef])
+                    __metadata('design:paramtypes', [(typeof (_a = typeof core_1.ChangeDetectorRef !== 'undefined' && core_1.ChangeDetectorRef) === 'function' && _a) || Object])
                 ], AsyncPipe);
                 return AsyncPipe;
+                var _a;
             })();
             exports_1("AsyncPipe", AsyncPipe);
         }

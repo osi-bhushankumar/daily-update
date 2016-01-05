@@ -82,9 +82,10 @@ System.register(['angular2/core', 'angular2/src/facade/async', './control_value_
                         bindings: [SELECT_VALUE_ACCESSOR]
                     }),
                     __param(2, core_1.Query(NgSelectOption, { descendants: true })), 
-                    __metadata('design:paramtypes', [core_1.Renderer, core_1.ElementRef, core_1.QueryList])
+                    __metadata('design:paramtypes', [(typeof (_a = typeof core_1.Renderer !== 'undefined' && core_1.Renderer) === 'function' && _a) || Object, (typeof (_b = typeof core_1.ElementRef !== 'undefined' && core_1.ElementRef) === 'function' && _b) || Object, (typeof (_c = typeof core_1.QueryList !== 'undefined' && core_1.QueryList) === 'function' && _c) || Object])
                 ], SelectControlValueAccessor);
                 return SelectControlValueAccessor;
+                var _a, _b, _c;
             })();
             exports_1("SelectControlValueAccessor", SelectControlValueAccessor);
         }

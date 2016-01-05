@@ -55,9 +55,10 @@ System.register(['angular2/src/core/linker/compiler', 'angular2/src/core/linker/
                 };
                 RuntimeCompiler_ = __decorate([
                     di_1.Injectable(), 
-                    __metadata('design:paramtypes', [proto_view_factory_1.ProtoViewFactory, template_compiler_1.TemplateCompiler])
+                    __metadata('design:paramtypes', [(typeof (_a = typeof proto_view_factory_1.ProtoViewFactory !== 'undefined' && proto_view_factory_1.ProtoViewFactory) === 'function' && _a) || Object, template_compiler_1.TemplateCompiler])
                 ], RuntimeCompiler_);
                 return RuntimeCompiler_;
+                var _a;
             })(compiler_1.Compiler_);
             exports_1("RuntimeCompiler_", RuntimeCompiler_);
         }

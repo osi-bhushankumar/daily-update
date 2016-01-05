@@ -1,4 +1,4 @@
-System.register(['angular2/src/core/angular_entrypoint', 'angular2/src/platform/browser_common', 'angular2/src/facade/lang', 'angular2/core'], function(exports_1) {
+System.register(['angular2/src/facade/lang', 'angular2/src/platform/browser_common', 'angular2/core'], function(exports_1) {
     var lang_1, browser_common_1, core_1;
     var BROWSER_APP_PROVIDERS;
     /**
@@ -14,27 +14,11 @@ System.register(['angular2/src/core/angular_entrypoint', 'angular2/src/platform/
     exports_1("bootstrapStatic", bootstrapStatic);
     return {
         setters:[
-            function (angular_entrypoint_1_1) {
-                exports_1({
-                    "AngularEntrypoint": angular_entrypoint_1_1["AngularEntrypoint"]
-                });
-            },
-            function (browser_common_2_1) {
-                exports_1({
-                    "BROWSER_PROVIDERS": browser_common_2_1["BROWSER_PROVIDERS"],
-                    "ELEMENT_PROBE_BINDINGS": browser_common_2_1["ELEMENT_PROBE_BINDINGS"],
-                    "ELEMENT_PROBE_PROVIDERS": browser_common_2_1["ELEMENT_PROBE_PROVIDERS"],
-                    "inspectNativeElement": browser_common_2_1["inspectNativeElement"],
-                    "BrowserDomAdapter": browser_common_2_1["BrowserDomAdapter"],
-                    "By": browser_common_2_1["By"],
-                    "Title": browser_common_2_1["Title"],
-                    "enableDebugTools": browser_common_2_1["enableDebugTools"],
-                    "disableDebugTools": browser_common_2_1["disableDebugTools"]
-                });
-                browser_common_1 = browser_common_2_1;
-            },
             function (lang_1_1) {
                 lang_1 = lang_1_1;
+            },
+            function (browser_common_1_1) {
+                browser_common_1 = browser_common_1_1;
             },
             function (core_1_1) {
                 core_1 = core_1_1;

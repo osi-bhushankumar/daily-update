@@ -35,9 +35,6 @@ System.register(['angular2/src/facade/lang', 'angular2/src/facade/exceptions', '
             },
             function (metadata_1_1) {
                 metadata_1 = metadata_1_1;
-                exports_1({
-                    "ViewEncapsulation": metadata_1_1["ViewEncapsulation"]
-                });
             }],
         execute: function() {
             /**
@@ -188,9 +185,10 @@ System.register(['angular2/src/facade/lang', 'angular2/src/facade/exceptions', '
                 };
                 BeginComponentCmd = __decorate([
                     lang_1.CONST(), 
-                    __metadata('design:paramtypes', [String, Array, Array, Array, Array, Number, Number, Function])
+                    __metadata('design:paramtypes', [String, Array, Array, Array, Array, (typeof (_a = typeof metadata_1.ViewEncapsulation !== 'undefined' && metadata_1.ViewEncapsulation) === 'function' && _a) || Object, Number, Function])
                 ], BeginComponentCmd);
                 return BeginComponentCmd;
+                var _a;
             })();
             exports_1("BeginComponentCmd", BeginComponentCmd);
             EndComponentCmd = (function () {

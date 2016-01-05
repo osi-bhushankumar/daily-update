@@ -113,9 +113,10 @@ System.register(['./source_module', 'angular2/src/core/metadata/view', 'angular2
                 };
                 StyleCompiler = __decorate([
                     di_1.Injectable(), 
-                    __metadata('design:paramtypes', [xhr_1.XHR, url_resolver_1.UrlResolver])
+                    __metadata('design:paramtypes', [(typeof (_a = typeof xhr_1.XHR !== 'undefined' && xhr_1.XHR) === 'function' && _a) || Object, (typeof (_b = typeof url_resolver_1.UrlResolver !== 'undefined' && url_resolver_1.UrlResolver) === 'function' && _b) || Object])
                 ], StyleCompiler);
                 return StyleCompiler;
+                var _a, _b;
             })();
             exports_1("StyleCompiler", StyleCompiler);
         }

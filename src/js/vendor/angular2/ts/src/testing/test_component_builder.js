@@ -227,9 +227,10 @@ System.register(['angular2/core', 'angular2/src/facade/lang', 'angular2/src/faca
                 };
                 TestComponentBuilder = __decorate([
                     core_1.Injectable(), 
-                    __metadata('design:paramtypes', [core_1.Injector])
+                    __metadata('design:paramtypes', [(typeof (_a = typeof core_1.Injector !== 'undefined' && core_1.Injector) === 'function' && _a) || Object])
                 ], TestComponentBuilder);
                 return TestComponentBuilder;
+                var _a;
             })();
             exports_1("TestComponentBuilder", TestComponentBuilder);
         }

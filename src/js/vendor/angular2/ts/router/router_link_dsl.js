@@ -11,9 +11,6 @@ System.register(['angular2/compiler', 'angular2/core', 'angular2/src/router/rout
             },
             function (router_link_transform_1_1) {
                 router_link_transform_1 = router_link_transform_1_1;
-                exports_1({
-                    "RouterLinkTransform": router_link_transform_1_1["RouterLinkTransform"]
-                });
             },
             function (lang_1_1) {
                 lang_1 = lang_1_1;

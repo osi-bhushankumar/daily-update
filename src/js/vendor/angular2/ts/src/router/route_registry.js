@@ -414,9 +414,10 @@ System.register(['angular2/src/facade/collection', 'angular2/src/facade/async', 
                 RouteRegistry = __decorate([
                     core_1.Injectable(),
                     __param(0, core_1.Inject(ROUTER_PRIMARY_COMPONENT)), 
-                    __metadata('design:paramtypes', [lang_1.Type])
+                    __metadata('design:paramtypes', [(typeof (_a = typeof lang_1.Type !== 'undefined' && lang_1.Type) === 'function' && _a) || Object])
                 ], RouteRegistry);
                 return RouteRegistry;
+                var _a;
             })();
             exports_1("RouteRegistry", RouteRegistry);
         }

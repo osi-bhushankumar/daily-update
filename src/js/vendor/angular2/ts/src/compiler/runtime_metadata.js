@@ -150,9 +150,10 @@ System.register(['angular2/src/core/di', 'angular2/src/facade/lang', 'angular2/s
                     di_2.Injectable(),
                     __param(2, di_2.Optional()),
                     __param(2, di_2.Inject(platform_directives_and_pipes_1.PLATFORM_DIRECTIVES)), 
-                    __metadata('design:paramtypes', [directive_resolver_1.DirectiveResolver, view_resolver_1.ViewResolver, Array])
+                    __metadata('design:paramtypes', [(typeof (_a = typeof directive_resolver_1.DirectiveResolver !== 'undefined' && directive_resolver_1.DirectiveResolver) === 'function' && _a) || Object, (typeof (_b = typeof view_resolver_1.ViewResolver !== 'undefined' && view_resolver_1.ViewResolver) === 'function' && _b) || Object, Array])
                 ], RuntimeMetadataResolver);
                 return RuntimeMetadataResolver;
+                var _a, _b;
             })();
             exports_1("RuntimeMetadataResolver", RuntimeMetadataResolver);
         }

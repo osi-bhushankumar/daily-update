@@ -56,9 +56,10 @@ System.register(['angular2/src/core/di', 'angular2/src/facade/collection', "angu
                 };
                 ServiceMessageBrokerFactory_ = __decorate([
                     di_1.Injectable(), 
-                    __metadata('design:paramtypes', [message_bus_1.MessageBus, serializer_1.Serializer])
+                    __metadata('design:paramtypes', [(typeof (_a = typeof message_bus_1.MessageBus !== 'undefined' && message_bus_1.MessageBus) === 'function' && _a) || Object, (typeof (_b = typeof serializer_1.Serializer !== 'undefined' && serializer_1.Serializer) === 'function' && _b) || Object])
                 ], ServiceMessageBrokerFactory_);
                 return ServiceMessageBrokerFactory_;
+                var _a, _b;
             })(ServiceMessageBrokerFactory);
             exports_1("ServiceMessageBrokerFactory_", ServiceMessageBrokerFactory_);
             ServiceMessageBroker = (function () {

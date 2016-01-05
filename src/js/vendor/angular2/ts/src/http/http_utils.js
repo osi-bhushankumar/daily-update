@@ -26,9 +26,6 @@ System.register(['angular2/src/facade/lang', './enums', 'angular2/src/facade/exc
         setters:[
             function (lang_1_1) {
                 lang_1 = lang_1_1;
-                exports_1({
-                    "isJsObject": lang_1_1["isJsObject"]
-                });
             },
             function (enums_1_1) {
                 enums_1 = enums_1_1;

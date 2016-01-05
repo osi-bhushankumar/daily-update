@@ -182,9 +182,10 @@ System.register(["angular2/src/facade/lang", 'angular2/src/facade/exceptions', "
                 };
                 Serializer = __decorate([
                     di_1.Injectable(), 
-                    __metadata('design:paramtypes', [render_proto_view_ref_store_1.RenderProtoViewRefStore, render_view_with_fragments_store_1.RenderViewWithFragmentsStore])
+                    __metadata('design:paramtypes', [(typeof (_a = typeof render_proto_view_ref_store_1.RenderProtoViewRefStore !== 'undefined' && render_proto_view_ref_store_1.RenderProtoViewRefStore) === 'function' && _a) || Object, (typeof (_b = typeof render_view_with_fragments_store_1.RenderViewWithFragmentsStore !== 'undefined' && render_view_with_fragments_store_1.RenderViewWithFragmentsStore) === 'function' && _b) || Object])
                 ], Serializer);
                 return Serializer;
+                var _a, _b;
             })();
             exports_1("Serializer", Serializer);
             RenderTemplateCmdSerializer = (function () {

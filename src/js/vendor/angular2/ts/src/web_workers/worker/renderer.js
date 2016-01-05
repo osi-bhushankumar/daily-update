@@ -250,9 +250,10 @@ System.register(['angular2/src/core/render/api', "angular2/src/web_workers/share
                 };
                 WebWorkerRenderer = __decorate([
                     di_1.Injectable(), 
-                    __metadata('design:paramtypes', [client_message_broker_1.ClientMessageBrokerFactory, render_proto_view_ref_store_1.RenderProtoViewRefStore, render_view_with_fragments_store_1.RenderViewWithFragmentsStore, event_dispatcher_1.WebWorkerEventDispatcher])
+                    __metadata('design:paramtypes', [(typeof (_a = typeof client_message_broker_1.ClientMessageBrokerFactory !== 'undefined' && client_message_broker_1.ClientMessageBrokerFactory) === 'function' && _a) || Object, (typeof (_b = typeof render_proto_view_ref_store_1.RenderProtoViewRefStore !== 'undefined' && render_proto_view_ref_store_1.RenderProtoViewRefStore) === 'function' && _b) || Object, (typeof (_c = typeof render_view_with_fragments_store_1.RenderViewWithFragmentsStore !== 'undefined' && render_view_with_fragments_store_1.RenderViewWithFragmentsStore) === 'function' && _c) || Object, (typeof (_d = typeof event_dispatcher_1.WebWorkerEventDispatcher !== 'undefined' && event_dispatcher_1.WebWorkerEventDispatcher) === 'function' && _d) || Object])
                 ], WebWorkerRenderer);
                 return WebWorkerRenderer;
+                var _a, _b, _c, _d;
             })();
             exports_1("WebWorkerRenderer", WebWorkerRenderer);
         }

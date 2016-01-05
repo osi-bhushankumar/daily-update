@@ -1,4 +1,4 @@
-System.register(["./runtime_compiler", './template_compiler', './directive_metadata', './source_module', 'angular2/src/core/platform_directives_and_pipes', 'angular2/src/compiler/template_ast', 'angular2/src/compiler/template_parser', 'angular2/src/facade/lang', 'angular2/src/core/di', 'angular2/src/compiler/html_parser', 'angular2/src/compiler/template_normalizer', 'angular2/src/compiler/runtime_metadata', 'angular2/src/compiler/change_detector_compiler', 'angular2/src/compiler/style_compiler', 'angular2/src/compiler/command_compiler', 'angular2/src/compiler/template_compiler', 'angular2/src/core/change_detection/change_detection', 'angular2/src/core/linker/compiler', 'angular2/src/compiler/runtime_compiler', 'angular2/src/compiler/schema/element_schema_registry', 'angular2/src/compiler/schema/dom_element_schema_registry', 'angular2/src/compiler/url_resolver'], function(exports_1) {
+System.register(["./runtime_compiler", './template_compiler', './directive_metadata', './source_module', 'angular2/src/compiler/template_ast', 'angular2/src/facade/lang', 'angular2/src/core/di', 'angular2/src/compiler/template_parser', 'angular2/src/compiler/html_parser', 'angular2/src/compiler/template_normalizer', 'angular2/src/compiler/runtime_metadata', 'angular2/src/compiler/change_detector_compiler', 'angular2/src/compiler/style_compiler', 'angular2/src/compiler/command_compiler', 'angular2/src/compiler/template_compiler', 'angular2/src/core/change_detection/change_detection', 'angular2/src/core/linker/compiler', 'angular2/src/compiler/runtime_compiler', 'angular2/src/compiler/schema/element_schema_registry', 'angular2/src/compiler/schema/dom_element_schema_registry', 'angular2/src/compiler/url_resolver'], function(exports_1) {
     var runtime_compiler_1, lang_1, di_1, template_parser_1, html_parser_1, template_normalizer_1, runtime_metadata_1, change_detector_compiler_1, style_compiler_1, command_compiler_1, template_compiler_1, change_detection_1, compiler_1, runtime_compiler_2, element_schema_registry_1, dom_element_schema_registry_1, url_resolver_1, change_detection_2;
     var COMPILER_PROVIDERS;
     function _createChangeDetectorGenConfig() {
@@ -11,10 +11,7 @@ System.register(["./runtime_compiler", './template_compiler', './directive_metad
         'CompileTypeMetadata': true,
         'CompileTemplateMetadata': true,
         'SourceModule': true,
-        'SourceWithImports': true,
-        'PLATFORM_DIRECTIVES': true,
-        'PLATFORM_PIPES': true,
-        'TEMPLATE_TRANSFORMS': true
+        'SourceWithImports': true
     };
     function exportStar_1(m) {
         var exports = {};
@@ -46,26 +43,17 @@ System.register(["./runtime_compiler", './template_compiler', './directive_metad
                     "SourceWithImports": source_module_1_1["SourceWithImports"]
                 });
             },
-            function (platform_directives_and_pipes_1_1) {
-                exports_1({
-                    "PLATFORM_DIRECTIVES": platform_directives_and_pipes_1_1["PLATFORM_DIRECTIVES"],
-                    "PLATFORM_PIPES": platform_directives_and_pipes_1_1["PLATFORM_PIPES"]
-                });
-            },
             function (template_ast_1_1) {
                 exportStar_1(template_ast_1_1);
-            },
-            function (template_parser_2_1) {
-                exports_1({
-                    "TEMPLATE_TRANSFORMS": template_parser_2_1["TEMPLATE_TRANSFORMS"]
-                });
-                template_parser_1 = template_parser_2_1;
             },
             function (lang_1_1) {
                 lang_1 = lang_1_1;
             },
             function (di_1_1) {
                 di_1 = di_1_1;
+            },
+            function (template_parser_1_1) {
+                template_parser_1 = template_parser_1_1;
             },
             function (html_parser_1_1) {
                 html_parser_1 = html_parser_1_1;

@@ -79,9 +79,10 @@ System.register(['angular2/src/core/linker/proto_view_factory', 'angular2/src/co
                 Compiler_.prototype.clearCache = function () { this._protoViewFactory.clearCache(); };
                 Compiler_ = __decorate([
                     di_1.Injectable(), 
-                    __metadata('design:paramtypes', [proto_view_factory_1.ProtoViewFactory])
+                    __metadata('design:paramtypes', [(typeof (_a = typeof proto_view_factory_1.ProtoViewFactory !== 'undefined' && proto_view_factory_1.ProtoViewFactory) === 'function' && _a) || Object])
                 ], Compiler_);
                 return Compiler_;
+                var _a;
             })(Compiler);
             exports_1("Compiler_", Compiler_);
         }

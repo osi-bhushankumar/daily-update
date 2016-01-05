@@ -141,9 +141,10 @@ System.register(['angular2/src/core/di/decorators', 'angular2/src/facade/lang', 
                 };
                 Parser = __decorate([
                     decorators_1.Injectable(), 
-                    __metadata('design:paramtypes', [lexer_1.Lexer, reflection_1.Reflector])
+                    __metadata('design:paramtypes', [lexer_1.Lexer, (typeof (_a = typeof reflection_1.Reflector !== 'undefined' && reflection_1.Reflector) === 'function' && _a) || Object])
                 ], Parser);
                 return Parser;
+                var _a;
             })();
             exports_1("Parser", Parser);
             _ParseAST = (function () {

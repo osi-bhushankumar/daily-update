@@ -42,9 +42,10 @@ System.register(['angular2/src/core/di', 'angular2/src/web_workers/shared/serial
                 };
                 MessageBasedXHRImpl = __decorate([
                     di_1.Injectable(), 
-                    __metadata('design:paramtypes', [service_message_broker_1.ServiceMessageBrokerFactory, xhr_1.XHR])
+                    __metadata('design:paramtypes', [(typeof (_a = typeof service_message_broker_1.ServiceMessageBrokerFactory !== 'undefined' && service_message_broker_1.ServiceMessageBrokerFactory) === 'function' && _a) || Object, (typeof (_b = typeof xhr_1.XHR !== 'undefined' && xhr_1.XHR) === 'function' && _b) || Object])
                 ], MessageBasedXHRImpl);
                 return MessageBasedXHRImpl;
+                var _a, _b;
             })();
             exports_1("MessageBasedXHRImpl", MessageBasedXHRImpl);
         }

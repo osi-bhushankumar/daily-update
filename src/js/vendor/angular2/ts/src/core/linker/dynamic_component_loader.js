@@ -146,9 +146,10 @@ System.register(['angular2/src/core/di', './compiler', 'angular2/src/facade/lang
                 };
                 DynamicComponentLoader_ = __decorate([
                     di_1.Injectable(), 
-                    __metadata('design:paramtypes', [compiler_1.Compiler, view_manager_1.AppViewManager])
+                    __metadata('design:paramtypes', [compiler_1.Compiler, (typeof (_a = typeof view_manager_1.AppViewManager !== 'undefined' && view_manager_1.AppViewManager) === 'function' && _a) || Object])
                 ], DynamicComponentLoader_);
                 return DynamicComponentLoader_;
+                var _a;
             })(DynamicComponentLoader);
             exports_1("DynamicComponentLoader_", DynamicComponentLoader_);
         }

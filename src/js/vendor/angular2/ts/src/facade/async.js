@@ -1,4 +1,4 @@
-System.register(['angular2/src/facade/lang', 'angular2/src/facade/promise', 'rxjs/Subject', 'rxjs/observable/fromPromise', 'rxjs/operator/toPromise', 'rxjs/Observable'], function(exports_1) {
+System.register(['angular2/src/facade/lang', 'rxjs/Subject', 'rxjs/observable/fromPromise', 'rxjs/operator/toPromise'], function(exports_1) {
     var __extends = (this && this.__extends) || function (d, b) {
         for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
         function __() { this.constructor = d; }
@@ -11,29 +11,14 @@ System.register(['angular2/src/facade/lang', 'angular2/src/facade/promise', 'rxj
             function (lang_1_1) {
                 lang_1 = lang_1_1;
             },
-            function (promise_1_1) {
-                exports_1({
-                    "PromiseWrapper": promise_1_1["PromiseWrapper"],
-                    "Promise": promise_1_1["Promise"],
-                    "PromiseCompleter": promise_1_1["PromiseCompleter"]
-                });
-            },
             function (Subject_1_1) {
                 Subject_1 = Subject_1_1;
-                exports_1({
-                    "Subject": Subject_1_1["Subject"]
-                });
             },
             function (fromPromise_1_1) {
                 fromPromise_1 = fromPromise_1_1;
             },
             function (toPromise_1_1) {
                 toPromise_1 = toPromise_1_1;
-            },
-            function (Observable_1_1) {
-                exports_1({
-                    "Observable": Observable_1_1["Observable"]
-                });
             }],
         execute: function() {
             TimerWrapper = (function () {

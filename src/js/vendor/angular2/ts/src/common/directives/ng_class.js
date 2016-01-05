@@ -193,9 +193,10 @@ System.register(['angular2/src/facade/lang', 'angular2/core', 'angular2/src/faca
                 };
                 NgClass = __decorate([
                     core_1.Directive({ selector: '[ngClass]', inputs: ['rawClass: ngClass', 'initialClasses: class'] }), 
-                    __metadata('design:paramtypes', [core_1.IterableDiffers, core_1.KeyValueDiffers, core_1.ElementRef, core_1.Renderer])
+                    __metadata('design:paramtypes', [(typeof (_a = typeof core_1.IterableDiffers !== 'undefined' && core_1.IterableDiffers) === 'function' && _a) || Object, (typeof (_b = typeof core_1.KeyValueDiffers !== 'undefined' && core_1.KeyValueDiffers) === 'function' && _b) || Object, (typeof (_c = typeof core_1.ElementRef !== 'undefined' && core_1.ElementRef) === 'function' && _c) || Object, (typeof (_d = typeof core_1.Renderer !== 'undefined' && core_1.Renderer) === 'function' && _d) || Object])
                 ], NgClass);
                 return NgClass;
+                var _a, _b, _c, _d;
             })();
             exports_1("NgClass", NgClass);
         }

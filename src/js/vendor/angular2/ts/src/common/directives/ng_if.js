@@ -63,9 +63,10 @@ System.register(['angular2/core', 'angular2/src/facade/lang'], function(exports_
                 });
                 NgIf = __decorate([
                     core_1.Directive({ selector: '[ngIf]', inputs: ['ngIf'] }), 
-                    __metadata('design:paramtypes', [core_1.ViewContainerRef, core_1.TemplateRef])
+                    __metadata('design:paramtypes', [(typeof (_a = typeof core_1.ViewContainerRef !== 'undefined' && core_1.ViewContainerRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.TemplateRef !== 'undefined' && core_1.TemplateRef) === 'function' && _b) || Object])
                 ], NgIf);
                 return NgIf;
+                var _a, _b;
             })();
             exports_1("NgIf", NgIf);
         }

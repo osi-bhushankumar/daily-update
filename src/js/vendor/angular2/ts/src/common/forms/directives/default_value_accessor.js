@@ -54,9 +54,10 @@ System.register(['angular2/core', './control_value_accessor', 'angular2/src/faca
                         host: { '(input)': 'onChange($event.target.value)', '(blur)': 'onTouched()' },
                         bindings: [DEFAULT_VALUE_ACCESSOR]
                     }), 
-                    __metadata('design:paramtypes', [core_1.Renderer, core_1.ElementRef])
+                    __metadata('design:paramtypes', [(typeof (_a = typeof core_1.Renderer !== 'undefined' && core_1.Renderer) === 'function' && _a) || Object, (typeof (_b = typeof core_1.ElementRef !== 'undefined' && core_1.ElementRef) === 'function' && _b) || Object])
                 ], DefaultValueAccessor);
                 return DefaultValueAccessor;
+                var _a, _b;
             })();
             exports_1("DefaultValueAccessor", DefaultValueAccessor);
         }

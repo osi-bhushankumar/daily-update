@@ -48,9 +48,10 @@ System.register(['angular2/core', 'angular2/router', './hero.service', './hero-d
                         styleUrls: ['app/heroes.component.css'],
                         directives: [hero_detail_component_1.HeroDetailComponent]
                     }), 
-                    __metadata('design:paramtypes', [hero_service_1.HeroService, router_1.Router])
+                    __metadata('design:paramtypes', [hero_service_1.HeroService, (typeof (_a = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _a) || Object])
                 ], HeroesComponent);
                 return HeroesComponent;
+                var _a;
             })();
             exports_1("HeroesComponent", HeroesComponent);
         }

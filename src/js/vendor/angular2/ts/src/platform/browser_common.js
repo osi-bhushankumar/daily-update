@@ -1,4 +1,4 @@
-System.register(['angular2/src/facade/lang', 'angular2/src/core/di', "angular2/core", "angular2/common", 'angular2/src/core/testability/testability', 'angular2/src/platform/dom/dom_adapter', 'angular2/src/platform/dom/events/dom_events', 'angular2/src/platform/dom/events/key_events', 'angular2/src/platform/dom/events/hammer_gestures', 'angular2/src/platform/dom/dom_tokens', 'angular2/src/platform/dom/dom_renderer', 'angular2/src/platform/dom/shared_styles_host', "angular2/src/platform/dom/shared_styles_host", "angular2/src/animate/browser_details", "angular2/src/animate/animation_builder", './browser/browser_adapter', 'angular2/src/platform/browser/testability', 'angular2/src/core/profile/wtf_init', "angular2/src/platform/dom/events/event_manager", 'angular2/src/platform/browser/title', 'angular2/platform/common_dom', 'angular2/src/platform/browser/tools/tools'], function(exports_1) {
+System.register(['angular2/src/facade/lang', 'angular2/src/core/di', "angular2/core", "angular2/common", 'angular2/src/core/testability/testability', 'angular2/src/platform/dom/dom_adapter', 'angular2/src/platform/dom/events/dom_events', 'angular2/src/platform/dom/events/key_events', 'angular2/src/platform/dom/events/hammer_gestures', 'angular2/src/platform/dom/dom_tokens', 'angular2/src/platform/dom/dom_renderer', 'angular2/src/platform/dom/shared_styles_host', "angular2/src/platform/dom/shared_styles_host", "angular2/src/animate/browser_details", "angular2/src/animate/animation_builder", './browser/browser_adapter', 'angular2/src/platform/browser/testability', 'angular2/src/core/profile/wtf_init', "angular2/src/platform/dom/events/event_manager"], function(exports_1) {
     var lang_1, di_1, core_1, common_1, testability_1, dom_adapter_1, dom_events_1, key_events_1, hammer_gestures_1, dom_tokens_1, dom_renderer_1, shared_styles_host_1, shared_styles_host_2, browser_details_1, animation_builder_1, browser_adapter_1, testability_2, wtf_init_1, event_manager_1;
     var BROWSER_PROVIDERS, BROWSER_APP_COMMON_PROVIDERS;
     function _exceptionHandler() {
@@ -46,9 +46,6 @@ System.register(['angular2/src/facade/lang', 'angular2/src/core/di', "angular2/c
             },
             function (dom_tokens_1_1) {
                 dom_tokens_1 = dom_tokens_1_1;
-                exports_1({
-                    "DOCUMENT": dom_tokens_1_1["DOCUMENT"]
-                });
             },
             function (dom_renderer_1_1) {
                 dom_renderer_1 = dom_renderer_1_1;
@@ -79,26 +76,6 @@ System.register(['angular2/src/facade/lang', 'angular2/src/core/di', "angular2/c
             },
             function (event_manager_1_1) {
                 event_manager_1 = event_manager_1_1;
-            },
-            function (title_1_1) {
-                exports_1({
-                    "Title": title_1_1["Title"]
-                });
-            },
-            function (common_dom_1_1) {
-                exports_1({
-                    "DebugElementViewListener": common_dom_1_1["DebugElementViewListener"],
-                    "ELEMENT_PROBE_PROVIDERS": common_dom_1_1["ELEMENT_PROBE_PROVIDERS"],
-                    "ELEMENT_PROBE_BINDINGS": common_dom_1_1["ELEMENT_PROBE_BINDINGS"],
-                    "inspectNativeElement": common_dom_1_1["inspectNativeElement"],
-                    "By": common_dom_1_1["By"]
-                });
-            },
-            function (tools_1_1) {
-                exports_1({
-                    "enableDebugTools": tools_1_1["enableDebugTools"],
-                    "disableDebugTools": tools_1_1["disableDebugTools"]
-                });
             }],
         execute: function() {
             /**

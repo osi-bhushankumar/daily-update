@@ -215,9 +215,10 @@ System.register(['angular2/compiler', 'angular2/src/core/change_detection/parser
                 };
                 RouterLinkTransform = __decorate([
                     core_1.Injectable(), 
-                    __metadata('design:paramtypes', [parser_1.Parser])
+                    __metadata('design:paramtypes', [(typeof (_a = typeof parser_1.Parser !== 'undefined' && parser_1.Parser) === 'function' && _a) || Object])
                 ], RouterLinkTransform);
                 return RouterLinkTransform;
+                var _a;
             })();
             exports_1("RouterLinkTransform", RouterLinkTransform);
         }
