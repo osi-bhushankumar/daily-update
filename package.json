@@ -4,7 +4,8 @@
   "scripts": {
     "tsc": "tsc",
     "tsc:w": "tsc -w",
-    "start": "concurrent \"npm run tsc:w\" "
+    "start": "nodemon web.js",
+    "serve": "concurrent \"npm run tsc:w\" \"npm run serve\" "
   },
   "license": "ISC",
   "dependencies": {

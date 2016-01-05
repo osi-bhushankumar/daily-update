@@ -38,16 +38,16 @@ System.register(['angular2/core', 'angular2/router', './heroes.component', './he
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "\n    <h1>{{title}}</h1>\n    <a [routerLink]=\"['Dashboard']\">Dashboard</a>\n    <a [routerLink]=\"['Heroes']\">Heroes</a>\n    <router-outlet></router-outlet>\n  ",
+                        template: "\n    <h1>{{title}}</h1>\n    <a [routerLink]=\"['Dashboard']\">Dashboard3</a>\n    <a [routerLink]=\"['Heroes']\">Heroes111</a>\n    <router-outlet></router-outlet>\n  ",
                         styleUrls: ['app/app.component.css'],
                         directives: [router_1.ROUTER_DIRECTIVES],
                         providers: [hero_service_1.HeroService]
                     }),
                     router_1.RouteConfig([
-                        // {path: '/', redirectTo: ['Dashboard'] },
-                        { path: '/dashboard', name: 'Dashboard', component: dashboard_component_1.DashboardComponent, useAsDefault: true },
-                        { path: '/heroes', name: 'Heroes', component: heroes_component_1.HeroesComponent },
-                        { path: '/detail/:id', name: 'HeroDetail', component: hero_detail_component_1.HeroDetailComponent }
+                        { path: '/', redirectTo: ['Dashboard'] },
+                        { path: 'dashboard', name: 'Dashboard', component: dashboard_component_1.DashboardComponent, useAsDefault: true },
+                        { path: 'heroes', name: 'Heroes', component: heroes_component_1.HeroesComponent },
+                        { path: 'detail/:id', name: 'HeroDetail', component: hero_detail_component_1.HeroDetailComponent }
                     ]), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
